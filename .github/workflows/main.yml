@@ -1,0 +1,23 @@
+name: Build Afterflow (gd 2.2074)
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ "**" ]
+
+jobs:
+  build:
+    name: Windows
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Build the mod
+      uses: geode-sdk/build-geode-mod@main
+      with:
+        sdk: v4.10.2
+        bindings-ref: 7de6aaa3fa1c4e22c55a502b8b4a41c314f29f2c
+        combine: true
+    - uses: actions/upload-artifact@v4
+      with:
+        name: afterflow-2074
+        path: ./*.geode
