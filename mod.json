@@ -1,0 +1,91 @@
+{
+    "geode": "4.10.2",
+    "gd": {
+        "win": "2.2074",
+        "mac": "2.2074"
+    },
+    "id": "afterflow.prsevend",
+    "name": "Afterflow",
+    "version": "v2.1.3",
+    "developer": "prsevend",
+    "description": "a predictive input cheat that fixes your early clicks and makes them accurate.",
+    "tags": [
+        "gameplay",
+        "utility",
+        "developer"
+    ],
+    "settings": {
+        "terminal-title": {
+            "type": "title",
+            "name": "terminal",
+            "description": "terminal window options"
+        },
+        "terminal-enabled": {
+            "type": "bool",
+            "name": "enable terminal",
+            "description": "allow the terminal key to open the afterflow log window",
+            "default": true
+        },
+        "keybinds-title": {
+            "type": "title",
+            "name": "keybinds",
+            "description": "pick the keys afterflow listens for"
+        },
+        "keybind-stage": {
+            "type": "string",
+            "name": "cycle stages",
+            "description": "key that cycles prediction stages in-level",
+            "default": "F6",
+            "one-of": [
+                "F1",
+                "F2",
+                "F3",
+                "F4",
+                "F5",
+                "F6",
+                "F7",
+                "F8",
+                "F9",
+                "F10",
+                "F11",
+                "F12",
+                "Insert",
+                "Delete",
+                "Home",
+                "End",
+                "PageUp",
+                "PageDown",
+                "`",
+                "none"
+            ]
+        },
+        "keybind-terminal": {
+            "type": "string",
+            "name": "terminal",
+            "description": "key that opens or closes the afterflow terminal",
+            "default": "F9",
+            "one-of": [
+                "F1",
+                "F2",
+                "F3",
+                "F4",
+                "F5",
+                "F6",
+                "F7",
+                "F8",
+                "F9",
+                "F10",
+                "F11",
+                "F12",
+                "Insert",
+                "Delete",
+                "Home",
+                "End",
+                "PageUp",
+                "PageDown",
+                "`",
+                "none"
+            ]
+        }
+    }
+}
